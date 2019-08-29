@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div id="hour">
+
+            <button onclick="hMinus()" class="buttonUp"><i class="fas fa-angle-up"></i></button>
+
+            <span id="hMinus-2" class="up2"></span>
+
+            <span id="hMinus-1" class="up1"></span>
+
+            <input type="number" id="hMain" class="center" value="0">
+
+            <span id="hPlus-1" class="down1"></span>
+
+            <span id="hPlus-2" class="down2"></span>
+
+            <button onclick="hPlus()" class="buttonDown"><i class="fas fa-angle-down"></i></button>
+
+        </div>
+
+        <div class="colun">
+            <span>:</span>
+        </div>
+
+        <div id="minutes">
+
+            <button onclick="mMinus()" class="buttonUp"><i class="fas fa-angle-up"></i></button>
+
+            <span id="mMinus-2" class="up2"></span>
+
+            <span id="mMinus-1" class="up1"></span>
+
+            <input type="number" id="mMain" class="center" value="0">
+
+            <span id="mPlus-1" class="down1"></span>
+
+            <span id="mPlus-2" class="down2"></span>
+
+            <button onclick="mPlus()" class="buttonDown"><i class="fas fa-angle-down"></i></button>
+
+        </div>
+
+        <div class="colun">
+            <span>:</span>
+        </div>
+
+        <div id="seconds">
+
+            <button onclick="sMinus()" class="buttonUp"><i class="fas fa-angle-up"></i></button>
+
+            <span id="sMinus-2" class="up2"></span>
+
+            <span id="sMinus-1" class="up1"></span>
+
+            <input value="0" type="number" id="sMain" class="center">
+
+            <span id="sPlus-1" class="down1"></span>
+
+            <span id="sPlus-2" class="down2"></span>
+
+            <button onclick="sPlus()" class="buttonDown"><i class="fas fa-angle-down"></i></button>
+
+        </div>
+
+    </main>
+
+    <div id="main">
+
+        <div id="ring">
+
+            <span id="hSpan">00</span>
+
+            <span class="colun2">:</span>
+
+            <span id="mSpan">00</span>
+            <span id="sSpan">00</span>
+
+        </div>
+
+    </div>
+
+    <div id="buttons">
+
+        <button onclick="startTimer()">Start</button>
+
+        <button onclick="reset()">Reset</button>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

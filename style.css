@@ -1,0 +1,160 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+:root {
+    --main: rgb(46, 173, 101);
+    --ring: rgb(46, 170, 170);
+    --background: rgb(17, 17, 17);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: var(--background);
+    margin-top: 50px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.colun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--main);
+    margin: 0 10px;
+}
+
+#hour,
+#minutes,
+#seconds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    border: none;
+    outline: none;
+    width: 45px;
+    font-size: 40px;
+    color: var(--main);
+    font-weight: bold;
+    margin: 5px;
+    background: transparent;
+}
+
+.up1,
+.down1 {
+    font-size: 29px;
+    color: rgba(128, 128, 128, 0.637);
+    font-weight: bold;
+    margin: 3px;
+}
+
+.up2,
+.down2 {
+    font-size: 24px;
+    color: rgba(128, 128, 128, 0.301);
+    font-weight: bold;
+    margin: 3px;
+}
+
+.buttonUp,
+.buttonDown {
+    background: transparent;
+    color: var(--ring);
+    border: none;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    margin: 5px;
+}
+
+i {
+    font-size: 35px;
+}
+
+i:active {
+    font-size: 30px;
+}
+
+.colun2 {
+    font-size: 35px;
+    color: var(--main);
+}
+
+#main {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 303px;
+}
+
+#mSpan,
+#hSpan {
+    font-size: 35px;
+    color: var(--main);
+    font-weight: bold;
+}
+
+#sSpan {
+    font-size: 20px;
+    color: var(--main);
+    font-weight: bold;
+}
+
+#ring {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid var(--ring);
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: var(--main);
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 95px;
+    border-radius: 50px;
+    margin: 20px 20px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(17, 17, 17);
+}
+
+@keyframes box {
+    from {
+        border-color: rgb(46, 170, 170);
+    }
+    to {
+        border-color: rgb(17, 17, 17);
+    }
+}
